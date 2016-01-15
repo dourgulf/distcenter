@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>银汉发行中心</title>
+    <link rel="stylesheet" href="css/upload.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>上传IPA包</h1>
+        <div class="content_wrapper">
+            <!-- D&D Markup -->
+            <div id="drag-and-drop-zone" class="uploader">
+                <div class="browser">
+                    <label>
+                        <span>拖拽到这里上传</span>
+                        <input type="file" name="files[]" title='点击选择文件'>
+                    </label>
+                </div>
+            </div>
+            <!-- /D&D Markup -->
+            <div id="upload-progress-zone" class="progress">
+                <img src="images/default_icon.png" class="image-icon" alt="">
+                <label>File info messages.....</label>
+                <div class="progress-bar-outer">
+                    <div class="progress-bar-inner" style="width:50%"></div>
+                </div>
+            </div>
+            <div id="upload-result-zone">
+                <div class="image-icon"><img id="image-icon" alt="" src=""></div>
+                <div class="image-qrcode"><img id="image-qrcode" alt="二维码" src=""></div>
+            </div>
+        </div>
+        <div id="debug">
+            <h2>Debug</h2>
+            <div>
+                <ul>
+                    <!-- Debug lines will be added here -->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate.js"></script>
+    <script src="js/dmuploader.js"></script>
+
+    <script>
+        //-- Some functions to work with our UI
+        function add_log(message) {
+            var template = '<li>[' + new Date().getTime() + '] - ' + message + '</li>';
+
+            $('#debug').find('ul').prepend(template);
+        }
+
+        function begin_upload(id, file) {
+            $('#drag-and-drop-zone').hide();
+            var template = '' +
+                '<div class="file" id="uploadFile' + id + '">' +
+                '<div class="info">' +
+                '#1 - <span class="filename" title="Size: ' + file.size + 'bytes - Mimetype: ' + file.type + '">' + file.name + '</span><br /><small>Status: <span class="status">Waiting</span></small>' +
+                '</div>' +
+                '<div class="bar">' +
+                '<div class="progress" style="width:0%"></div>' +
+                '</div>' +
+                '</div>';
+            $('#upload-progress-zone').prepend(template);
+            $('#upload-progress-zone').show();
+        }
+
+        function update_file_status(id, status, message) {
+            $('#uploadFile' + id).find('span.status').html(message).addClass(status);
+        }
+
+        function update_file_progress(id, percent) {
+            $('#uploadFile' + id).find('div.progress').width(percent);
+        }
+
+        function end_upload(result) {
+            $('#upload-progress-zone').hide();
+            var $result_zone = $('#upload-result-zone');
+            $result_zone.find("#image-icon").prop('src', result.iconURL);
+
+            var installURL = window.location + "/ipa/" + result.ipaID + "/install.html";
+            var qrimage_url = "/qrcode/create?text=" + window.encodeURIComponent(installURL);
+            $result_zone.find("#image-qrcode").prop('src', qrimage_url);
+
+            $result_zone.show();
+        }
+        // Upload Plugin itself
+        $('#drag-and-drop-zone').dmUploader({
+            url: '/upload',
+            dataType: 'json',
+            allowedTypes: '*',
+            /*extFilter: 'jpg;png;gif',*/
+            onInit: function () {
+                add_log('Plugin initialized :)');
+            },
+            onBeforeUpload: function (id) {
+                add_log('Starting the upload of #' + id);
+
+                update_file_status(id, 'uploading', '正在努力上传……');
+            },
+            onNewFile: function (id, file) {
+                add_log('New file added to queue #' + id);
+
+                begin_upload(id, file);
+            },
+            onComplete: function () {
+                add_log('All completed');
+            },
+            onUploadProgress: function (id, percent) {
+                var percentStr = percent + '%';
+
+                update_file_progress(id, percentStr);
+            },
+            onUploadSuccess: function (id, data) {
+                add_log('Upload of file #' + id + ' completed');
+
+                add_log('Server Response for file #' + id + ': ' + JSON.stringify(data));
+                update_file_status(id, 'success', '完毕!');
+
+                update_file_progress(id, '100%');
+
+                end_upload(data);
+            },
+            onUploadError: function (id, message) {
+                add_log('Upload failed #' + id + ' : ' + message);
+
+                update_file_status(id, 'error', message);
+            },
+            onFileTypeError: function (file) {
+                add_log('文件 \'' + file.name + '\' 类型错误:必须是IPA文件哦');
+
+            },
+            onFileSizeError: function (file) {
+                add_log('文件 \'' + file.name + '\' 超过大小限制了');
+            },
+            /*onFileExtError: function(file){
+              $.danidemo.addLog('#demo-debug', 'error', 'File \'' + file.name + '\' has a Not Allowed Extension');
+            },*/
+            onFallbackMode: function (message) {
+                alert('浏览器不支持文件上传...: ' + message);
+            }
+        });
+    </script>
+
+</body>
+
+</html>
