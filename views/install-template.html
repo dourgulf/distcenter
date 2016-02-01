@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{title}</title>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate.js"></script>
+    <script>
+        $(function() {
+            $("#install-app").click(function() {
+            $().redirect('{itmsURL}')
+        });
+        });
+    </script>
+</head>
+<body>
+    <p>
+        判定是不是微信,如果是的话,提示用户用浏览器打开.
+    </p>
+    <input type=button class="install-app" id="install-app" value="立刻下载">
+</body>
+</html>

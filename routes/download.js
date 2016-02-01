@@ -5,7 +5,7 @@
 var express = require('express');
 var router = express.Router();
 var debug = require('debug')('distcenter:download');
-var dbservice = require('../controllers/storage/dbservice');
+var dbservice = require('./dbservice');
 
 router.get('/query', function (req, res) {
     var ipaID = req.query.ipaID;

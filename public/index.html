@@ -13,20 +13,24 @@
         <h1>上传IPA包</h1>
         <div class="content_wrapper">
             <!-- D&D Markup -->
-            <div id="drag-and-drop-zone" class="uploader">
-                <div class="browser">
-                    <label>
-                        <span>拖拽到这里上传</span>
-                        <input type="file" name="files[]" title='点击选择文件'>
-                    </label>
+            <div id="drag-and-drop-zone">
+                <div class="uploader">
+                    <!--                    <label>-->
+                    <span>拖拽到这里上传</span>
+                    <input type="file" name="files[]" title='点击选择文件'>
+                    <!--                    </label>-->
                 </div>
             </div>
             <!-- /D&D Markup -->
-            <div id="upload-progress-zone" class="progress">
-                <img src="images/default_icon.png" class="image-icon" alt="">
-                <label>File info messages.....</label>
-                <div class="progress-bar-outer">
-                    <div class="progress-bar-inner" style="width:50%"></div>
+            <div id="upload-progress-zone">
+                <div class="progress">
+                    <img id="file-icon" src="images/default_icon.png" class="image-icon" alt="">
+                    <label id="file-status">....</label>
+                    <div class="progress-bar">
+                        <div class="progress-bar-outer">
+                            <div class="progress-bar-inner" id="progress-display" style="width:0%"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div id="upload-result-zone">
@@ -56,27 +60,32 @@
             $('#debug').find('ul').prepend(template);
         }
 
+        function update_file_icon(file) {
+            if (typeof FileReader !== "undefined"){
+                var reader = new FileReader();
+                // Last image added
+                var img = $('#upload-progress-zone').find('#file-icon').eq(0);
+                reader.onload = function (e) {
+                    console.log(e.target.result);
+                    img.attr('src', e.target.result);
+                }
+                reader.readAsDataURL(file);
+            }
+        }
+
         function begin_upload(id, file) {
             $('#drag-and-drop-zone').hide();
-            var template = '' +
-                '<div class="file" id="uploadFile' + id + '">' +
-                '<div class="info">' +
-                '#1 - <span class="filename" title="Size: ' + file.size + 'bytes - Mimetype: ' + file.type + '">' + file.name + '</span><br /><small>Status: <span class="status">Waiting</span></small>' +
-                '</div>' +
-                '<div class="bar">' +
-                '<div class="progress" style="width:0%"></div>' +
-                '</div>' +
-                '</div>';
-            $('#upload-progress-zone').prepend(template);
             $('#upload-progress-zone').show();
+            var statusText = file.name + "(" + file.size + ")";
+            $('#upload-progress-zone').find('#file-status').html(statusText);
         }
 
         function update_file_status(id, status, message) {
-            $('#uploadFile' + id).find('span.status').html(message).addClass(status);
+//            $('#upload-progress-zone').find('#upload-status').html(message).addClass(status);
         }
 
         function update_file_progress(id, percent) {
-            $('#uploadFile' + id).find('div.progress').width(percent);
+            $('#upload-progress-zone').find('#progress-display').width(percent);
         }
 
         function end_upload(result) {
@@ -84,8 +93,9 @@
             var $result_zone = $('#upload-result-zone');
             $result_zone.find("#image-icon").prop('src', result.iconURL);
 
-            var installURL = window.location + "/ipa/" + result.ipaID + "/install.html";
+            var installURL = window.location + "ipa/" + result.ipaID + "/install.html";
             var qrimage_url = "/qrcode/create?text=" + window.encodeURIComponent(installURL);
+            add_log("install url:" + installURL)
             $result_zone.find("#image-qrcode").prop('src', qrimage_url);
 
             $result_zone.show();

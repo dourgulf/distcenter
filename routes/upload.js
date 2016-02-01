@@ -9,68 +9,20 @@ var path = require('path');
 
 var multipartMiddleware = require('connect-multiparty')();
 
-var dbservice = require('../controllers/storage/dbservice');
-var ipapaser = require('../controllers/ipa/ipaparser');
-var IPAInfo = require('../controllers/ipa/ipainfo');
+var dbservice = require('./dbservice');
+var ipapaser = require('./ipa/ipaparser');
+var IPAInfo = require('./ipa/ipainfo');
 
 var baseFilePath = path.join(__dirname, '../uploads/ipa/');
 
 // TODO: change to configuration file
-var IPAInstallURLbase = "https://192.168.11.116:3001/ipa/";
+var IPAInstallURLbase = require("../config").IPAInstallURLbase;
 var installPlistName = "install.plist";
 var installHTMLName = "install.html";
 
-var installPlistTemplate = [
-    '<?xml version="1.0" encoding="UTF-8"?>',
-    '<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">',
-    '<plist version="1.0">',
-    '<dict>',
-    '  <key>items</key>',
-    '  <array>',
-    '	<dict>',
-    '	  <key>assets</key>',
-    '	  <array>',
-    '		<dict>',
-    '		  <key>kind</key>',
-    '		  <string>software-package</string>',
-    '		  <key>url</key>',
-    '		  <string>{appurl}</string>',
-    '		</dict>',
-    '	  </array>',
-    '	  <key>metadata</key>',
-    '	  <dict>',
-    '		<key>bundle-identifier</key>',
-    '		<string>{bundleid}</string>',
-    '		<key>bundle-version</key>',
-    '		<string>{version}</string>',
-    '		<key>kind</key>',
-    '		<string>software</string>',
-    '		<key>title</key>',
-    '		<string>{title}</string>',
-    '	  </dict>',
-    '	</dict>',
-    '  </array>',
-    '</dict>',
-    '</plist>',
-].join('\n');
+var installPlistTemplate = require('./template').installPlistTemplate
 
-var installHTMLTemplate = [
-    '<!DOCTYPE html>',
-    '<html>',
-    '<head>',
-    '  <meta charset="utf-8">',
-    '  <meta http-equiv="Content-Style-Type" content="text/css">',
-    '  <title>{title}</title>',
-    //'  <script language="javascript" type="text/javascript">',
-    //'    window.location.href="{itmsURL}"',
-    //'  </script>',
-    '</head>',
-    '<body>',
-    '  <p>提示用户使用Safari打开</p>',
-    '</body>',
-    '</html>',
-    '',
-].join("\n");
+var installHTMLTemplate = require('./template').installHTMLTemplate
 
 var itmsURLTemplate = 'itms-services://?action=download-manifest&url={plisturl}';
 
@@ -113,14 +65,13 @@ router.post('/', multipartMiddleware, function (req, res) {
     // IPA文件路径
     savePath = path.join(ipaInfo.basePath, ipaInfo.fileName);
     fs.renameSync(req.files.file.path, savePath);
-    ipaInfo.filePath = savePath;
     ipapaser.parse(ipaInfo, function (parseResult) {
         if (parseResult.error) {
             res.send(JSON.stringify(parseResult));
         }
         else {
             createInstallFiles(parseResult);
-            parseResult.basePath = '';
+            delete parseResult.basePath
             dbservice.saveIPAInfo(ipaInfo, "-1", function () {
                 res.send(JSON.stringify(parseResult));
             })

@@ -32,112 +32,83 @@ h1 a {
     width: 410px;
 }
 
-#drag-and-drop-zone{
-    display: none;
+#drag-and-drop-zone {
+/*    display: none;*/
+    text-align: center;
+    font-size: 24px;
+    cursor: pointer;    
 }
 /*
  * Widget
  */
 
 .uploader {
-    text-align: center;
-    font-size: 24px;
-    cursor: pointer;
-}
-
-.uploader div.browser label {
-    background-color: #5a7bc2;
-    color: white;
-    /*    padding: 60px 0px;*/
-    font-size: 14px;
+    background-color: #FFBF00;
+    color: white;    
+    font-size: 16px;
     font-weight: bold;
-    border-radius: 2px;
+    border-radius: 3px;
     position: relative;
     overflow: hidden;
-    display: block;
     box-shadow: 2px 2px 2px #888888;
 }
 
-.uploader div.browser span {
+.uploader span {
     position: absolute;
     top: 50%;
     left: 0;
     bottom: 0;
     right: 0;
-    color: bisque;
 }
 
-.uploader div.browser input {
-    background: red;
+.uploader input {
     border: solid transparent;
     border-width: 0 0 310px 200px;
     opacity: .0;
     filter: alpha(opacity=0);
-    -o-transform: translate(250px, -50px) scale(1);
-    -moz-transform: translate(-300px, 0) scale(4);
     direction: ltr;
     cursor: pointer;
 }
 
-.uploader div.browser label:hover {
-    background-color: #427fed;
+.uploader:hover {
+    background-color: darkorange;
+    font-size: 18px;
 }
-
-
-/*
- * File list
- */
 
 #upload-progress-zone {
-/*    display: none;*/
-    float: right;
-    width: 330px;
-    height: 196px;
-    margin: 0px;
-    padding: 0px;
-    list-style-type: none;
-    color: gray;
-    font-size: 12px;
-    overflow: auto;
-}
-
-#upload-progress-zone .file {
-    width: 330px;
-    height: 196px;
-    margin-bottom: 15px;
-}
-
-#upload-progress-zone .info {
-    width: 330px;
-    height: 196px;
-    display: block;
+    display: none;    
+    text-align: left;
+    font-size: 16px;
+    height: 310px;
+    background-color: #FFBF00;
+    color: white;   
+    border-radius: 3px;
+    position: relative;
     overflow: hidden;
-    line-height: 13px;
+    box-shadow: 2px 2px 2px #888888;
 }
 
-#upload-progress-zone .filename {
-    font-weight: bold;
+.progress {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: 10px ;
 }
 
-#upload-progress-zone .bar {
+.progress .progress-bar-outer {
     border: solid 1px #C0C0C0;
-    height: 12px;
-    margin-top: 5px;
-    padding: 1px;
-    width: 290px;
+    height: 20px;
+    margin-top: 10px;
+    padding: 2px 2px 0px 2px;
+    border-radius: 3px;
 }
 
-#upload-progress-zone .progress {
-    height: 12px;
+.progress .progress-bar-inner {
+    height: 18px;
     background-color: #5a7bc2;
-}
-
-#upload-progress-zone span.success {
-    color: #009900;
-}
-
-#upload-progress-zone span.error {
-    color: #990000;
+    border-radius: 3px;
 }
 
 #upload-result-zone {
