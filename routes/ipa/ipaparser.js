@@ -5,7 +5,6 @@
 var fs = require('fs');
 var rmdir = require('rimraf');
 var path = require('path');
-var sys = require('sys')
 var exec = require('child_process').exec;
 var stringformat = require('stringformat');
 stringformat.extendString('coolFormat');
