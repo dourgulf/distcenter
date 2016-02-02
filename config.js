@@ -4,13 +4,13 @@
 
 module.exports.mysqlConfigure = {
     host: 'localhost',
-    user: 'root',
-    password: '',
+    user: 'distcenter',
+    password: 'distcenternopass',
     database: 'distcenter'
 };
 
-module.exports.IPAInstallURLbase = "https://192.168.11.116:3001/ipa/";
+module.exports.IPAInstallURLbase = "https://www.dawenhing.top/ipa/";
 
 // Only iMac
 // xcrun pngcrush -revert-iphone-optimizations {src} {dst}
-module.exports.uncrashIconCmd = 'python /Users/jinchudarwin/WebstormProjects/distcenter/exec/uncrushpng.py "{src}" "{dst}" ';
+module.exports.uncrashIconCmd = 'python /home/ubuntu/node/distcenter/exec/uncrushpng.py "{src}" "{dst}" ';

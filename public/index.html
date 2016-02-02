@@ -94,7 +94,7 @@
             $result_zone.find("#image-icon").prop('src', result.iconURL);
 
             var installURL = window.location + "ipa/" + result.ipaID + "/install.html";
-            var qrimage_url = "/qrcode/create?text=" + window.encodeURIComponent(installURL);
+            var qrimage_url = "https://dawenhing.top/myapi/qrcode?text=" + window.encodeURIComponent(installURL);
             add_log("install url:" + installURL)
             $result_zone.find("#image-qrcode").prop('src', qrimage_url);
 
@@ -102,7 +102,7 @@
         }
         // Upload Plugin itself
         $('#drag-and-drop-zone').dmUploader({
-            url: '/upload',
+            url: 'upload',
             dataType: 'json',
             allowedTypes: '*',
             /*extFilter: 'jpg;png;gif',*/
