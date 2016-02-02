@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="823d1897-ec9b-4e7e-981b-f0bedf5034ce" name="Default" comment="上传画面第一版美化完成">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/test.html" afterPath="$PROJECT_DIR$/public/test.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/install-template.html" afterPath="$PROJECT_DIR$/views/install-template.html" />
     </list>
     <ignored path="distcenter.iws" />
@@ -118,8 +119,8 @@
       <file leaf-file-name="install-template.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/install-template.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33277312">
-              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.60504204">
+              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -884,8 +885,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/install-template.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33277312">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.60504204">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="33" />
           <folding />
         </state>
       </provider>

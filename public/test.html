@@ -1,26 +1,65 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>crashdemo</title>
+    <link rel="stylesheet" href="css/install.css" rel="stylesheet" />
+    <script src="/js/jquery.js"></script>
+    <script src="/js/jquery-migrate.js"></script>
+    <script>
+        $(function () {
+            var installing = false;
+            $("#install-app").click(function () {
+                if (installing) {
+                    return;
+                }
+                $(window.location).attr('href', '{itmsURL}');
+                installing = true;
+                $("#install-app").html("<i>正在下载,可以回到主界面看看安装完了没</i>");
+            });
+        });
+    </script>
+</head>
 
 <body>
-    <style type="text/css">
-        .simple {
-            background: red;
-            width: 500px;
-            margin: 20px auto;
-        }
-        
-        .fancy {
-            background: yellow;
-            width: 500px;
-            margin: 20px auto;
-            padding: 50px;
-            border-width: 10px;
-            box-sizing: border-box;
-        }
-    </style>
-    <div class="simple">ddd</div>
-    <div class="fancy">dddd</div>
+    <div class="masklayer" id="MaskLayer" style="display:none"></div>
+    <span class="pattern left">
+        <img src="/images/download_pattern_left.png">
+    </span>
+    <span class="pattern right">
+        <img src="/images/download_pattern_right.png">
+    </span>
+    <div class="out-container">
+        <div class="main">
+            <div class="table-container">
+                <div class="cell-container">
+                    <div class="app-brief">
+                        <div class="icon-container wrapper">
+                            <i class="icon-icon_path bg-path"></i>
+                            <span class="icon">
+                              <img src="{iconURL}" itemprop="image" alt="Icon.Missed">
+                            </span>
+                        </div>
 
-
+                        <h1 class="name wrapper">
+                          <span class="icon-warp">
+                            <i class="icon-ios"></i>
+                            {AppTitle}
+                          </span>
+                        </h1>
+                        <div class="release-info">
+                            <p>{BuildInfo}</p>
+                            <p>{UpdateTimestamp}</p>
+                        </div>
+                        <div>
+                            <p class="download-btn">Download</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
