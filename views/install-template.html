@@ -8,7 +8,7 @@
     <script>
         $(function() {
             $("#install-app").click(function() {
-            $().redirect('{itmsURL}')
+                $(window.location).attr('href', '{itmsURL}');
         });
         });
     </script>
