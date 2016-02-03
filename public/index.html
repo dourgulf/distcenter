@@ -93,10 +93,10 @@
             var $result_zone = $('#upload-result-zone');
             $result_zone.find("#image-icon").prop('src', result.iconURL);
 
-            var installURL = window.location + "ipa/" + result.ipaID + "/install.html";
-            var qrimage_url = "https://dawenhing.top/myapi/qrcode?text=" + window.encodeURIComponent(installURL);
-            add_log("install url:" + installURL)
-            $result_zone.find("#image-qrcode").prop('src', qrimage_url);
+            var installURL = window.location + "download/query?appID=" + result.appID + "&userID=-1";
+            add_log(installURL);
+            var qrmakerURL = "https://dawenhing.top/myapi/qrcode?text=" + window.encodeURIComponent(installURL);
+            $result_zone.find("#image-qrcode").prop('src', qrmakerURL);
 
             $result_zone.show();
         }

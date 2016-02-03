@@ -71,7 +71,7 @@
 <script>
     $(function () {
         $("#download_app").click(function() {
-            $(window.location).attr("href", "itms-services://?action=download-manifest&url=https://www.dawenhing.top/ipa/ca9f3750-c98a-11e5-bb30-2d665e2f2232/install.plist");
+            $(window.location).attr("href", "{itmsURL}");
             $(this).parent().html("<span>正在下载，可以切换回主屏幕看看安装情况</span>");
         });
     });

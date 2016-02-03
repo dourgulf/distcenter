@@ -75,7 +75,7 @@ function parseInfoPlist(ipaInfo, fn) {
         ipaInfo.bundleid = plistObj['CFBundleIdentifier'] || '';
         ipaInfo.version = plistObj['CFBundleShortVersionString'] || '';
         ipaInfo.buildVersion = plistObj['CFBundleVersion'] || '';
-        ipaInfo.requireiOS = plistObj['MinimumOSVersion'];
+        ipaInfo.requireOSVersion = plistObj['MinimumOSVersion'];
         ipaInfo.title = plistObj['CFBundleName'];
         // 直接写Icon的情况
         var iconList = [path.join(appDir, "Icon@2x.png"),
@@ -148,7 +148,7 @@ function parse(ipaInfo, fn) {
     });
 
     unzipper.on('progress', function (fileIndex, fileCount) {
-        debug('Extracted file ' + (fileIndex + 1) + ' of ' + fileCount);
+        //debug('Extracted file ' + (fileIndex + 1) + ' of ' + fileCount);
     });
 
     unzipper.extract({
