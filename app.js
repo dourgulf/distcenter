@@ -8,7 +8,6 @@ var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
 var upload = require('./routes/upload');
-var qrcode = require('./routes/qrcode');
 var download = require('./routes/download');
 
 var app = express();
@@ -20,16 +19,13 @@ app.set('view engine', 'jade');
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));
-app.use(bodyParser.json({ limit: '50mb' }));
-app.use(bodyParser.urlencoded({ extended: true, limit: '50mb' }));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(express.static(path.join(__dirname, 'uploads')));
-app.use(express.static(path.join(__dirname, 'demos')));
 
 app.use('/', routes);
 app.use('/upload', upload);
-app.use('/qrcode', qrcode);
 app.use('/download', download);
 
 // catch 404 and forward to error handler
