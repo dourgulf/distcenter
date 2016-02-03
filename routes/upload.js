@@ -42,12 +42,13 @@ function createInstallFiles(ipaInfo) {
     var plistPath = path.join(ipaInfo.basePath, installPlistName);
     fs.writeFileSync(plistPath, plistContent, 'utf8');
 
+    ipaInfo.iconURL = "ipa/" + ipaInfo.ipaID + "/icon.png";
+
     // 用个HTML文件来包裹AppStore的条件链接
-    var htmlContent = installHTMLTemplate.coolFormat({title: ipaInfo.title, itmsURL: itmsURL});
+    var htmlContent = installHTMLTemplate.coolFormat({AppTitle: ipaInfo.title, itmsURL: itmsURL, iconURL: ipaInfo.iconURL});
     var htmlPath = path.join(ipaInfo.basePath, installHTMLName);
     fs.writeFileSync(htmlPath, htmlContent, 'utf8');
 
-    ipaInfo.iconURL = "ipa/" + ipaInfo.ipaID + "/icon.png";
 }
 
 router.post('/', multipartMiddleware, function (req, res) {
