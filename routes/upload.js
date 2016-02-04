@@ -14,39 +14,20 @@ var dbservice = require('./dbservice');
 var ipapaser = require('./ipa/ipaparser');
 var AppInfo = require('./ipa/appinfo');
 
-var baseFilePath = require("../config").appStoragePath;
+var config = require("../config");
+var baseFilePath = config.appStoragePath;
+var IPAInstallURLbase = config.IPAInstallURLbase;
+var installPlistName = config.installPlistName;
 
-// TODO: change to configuration file
-var IPAInstallURLbase = require("../config").IPAInstallURLbase;
-var installPlistName = "install.plist";
-var installHTMLName = "install.html";
-
-var installPlistTemplate = require('./template').installPlistTemplate
-
-var installHTMLTemplate = require('./template').installHTMLTemplate
-
-var itmsURLTemplate = 'itms-services://?action=download-manifest&url={plisturl}';
+var installPlistTemplate = require('./template').installPlistTemplate;
 
 stringformat.extendString('coolFormat');
 
 function createInstallFiles(appInfo) {
-    // IPA 文件的下载链接,它是一个完整的HTTPS下载地址
-    var ipaurl = IPAInstallURLbase + appInfo.storageID "/" + appInfo.fileName;
-    // 包含IPA下载信息的Plist文件的下载链接
-    var plistURL = IPAInstallURLbase + appInfo.storageID + "/" + installPlistName;
-
-    //  AppStore跳转协议链接
-    var itmsURL = itmsURLTemplate.coolFormat({plisturl: plistURL});
-
-    // 生成Plist具体文件内容
+    var ipaurl = IPAInstallURLbase + appInfo.storageID + "/" + appInfo.fileName;
     var plistContent = installPlistTemplate.coolFormat({appurl: ipaurl, bundleid: appInfo.bundleid, version: appInfo.version, title: appInfo.title});
     var plistPath = path.join(appInfo.basePath, installPlistName);
     fs.writeFileSync(plistPath, plistContent, 'utf8');
-
-    // 用个HTML文件来包裹AppStore的条件链接
-    var htmlContent = installHTMLTemplate.coolFormat({AppTitle: appInfo.title, itmsURL: itmsURL, iconURL: appInfo.iconURL});
-    var htmlPath = path.join(appInfo.basePath, installHTMLName);
-    fs.writeFileSync(htmlPath, htmlContent, 'utf8');
 }
 
 router.post('/', multipartMiddleware, function (req, res) {
@@ -60,7 +41,7 @@ router.post('/', multipartMiddleware, function (req, res) {
     var savePath = path.join(baseFilePath + appInfo.storageID);
     debug("base path:" + savePath);
     appInfo.basePath = savePath;
-    appInfo.fileName = "app.ipa";  //req.files.file.originalFilename;
+    appInfo.fileName = "app.ipa";
     mkdirp.sync(savePath);
 
     // IPA文件路径
