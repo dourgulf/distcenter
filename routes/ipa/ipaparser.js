@@ -9,7 +9,7 @@ var exec = require('child_process').exec;
 var stringformat = require('stringformat');
 stringformat.extendString('coolFormat');
 
-var uncrashIconCmd = require("../../config").uncrashIconCmd;
+var config = require("../../config");
 var DecompressZip = require('decompress-zip');
 var plist = require('plist');
 var bplist = require('bplist-parser')
@@ -117,14 +117,14 @@ function parseInfoPlist(ipaInfo, fn) {
         }
         // 删除非空目录
         rmdir.sync(path.join(basepath, "Payload"));
-        uncrushIconImage(path.join(basepath, "icon_iOS.png"), path.join(basepath, "icon.png"), function() {
+        uncrushIconImage(path.join(basepath, "icon_iOS.png"), path.join(basepath, config.iconName), function() {
             fn(ipaInfo);
         });
     });
 }
 
 function uncrushIconImage(from, to, fn) {
-    var cmd = uncrashIconCmd.coolFormat({src: from, dst: to})
+    var cmd = config.uncrashIconCmd.coolFormat({src: from, dst: to})
     debug("convert icon command:" + cmd)
     exec(cmd, function (error, stdout, stderr) {
         if (error) {

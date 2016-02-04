@@ -8,12 +8,13 @@ function AppInfo() {
     this.storageID;
     this.basePath;
     this.fileName;
-    this.title = '';
-    this.bundleid = '';
-    this.version = '';
-    this.buildVersion = '';
-    this.title = '';
-    this.requireOSVersion = '';
+    this.title;
+    this.bundleid;
+    this.version;
+    this.buildVersion;
+    this.title;
+    this.requireOSVersion;
+    this.uploadTimestamp;
 };
 
 module.exports = AppInfo;

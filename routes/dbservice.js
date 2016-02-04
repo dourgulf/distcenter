@@ -25,7 +25,6 @@ function connect () {
     db = mysql.createConnection(config);
     db.connect(handleError);
     db.on('error', handleError);
-
 }
 
 var db;
@@ -39,7 +38,7 @@ exports.saveAppInfo = function(appInfo, userID, fn) {
 
     var query = db.query(sql, params, function (err) {
         if (err) {
-            console.log('save error:' + err);
+            console.error('save error:' + err);
         }
         fn(err);
     });
@@ -47,10 +46,10 @@ exports.saveAppInfo = function(appInfo, userID, fn) {
 };
 
 exports.queryAppInfo = function (appID, userID, fn) {
-    var sql = "select app_id, storage_id, title, bundle_id, version, build_version, requireOSVersion, user_id, access_pwd, pwdsalt from ipa where app_id=? and user_id=?";
+    var sql = 'select app_id, storage_id, title, bundle_id, version, build_version, requireOSVersion, DATE_FORMAT(upload_timestamp,"%Y-%m-%d %H:%i:%s") as upload_timestamp, user_id, access_pwd, pwdsalt from ipa where app_id=? and user_id=?';
     var query = db.query(sql, [appID, userID], function(err, rows){
         if (err) {
-            console.log("query error:" + err);
+            console.error("query error:" + err);
             fn(err);
             return ;
         }
@@ -65,6 +64,7 @@ exports.queryAppInfo = function (appID, userID, fn) {
             ipaInfo.version = row0.version;
             ipaInfo.buildVersion = row0.build_version;
             ipaInfo.requireOSVersion = row0.requireOSVersion;
+            ipaInfo.uploadTimestamp = row0.upload_timestamp;
             fn(null, ipaInfo);
         }
         else {
