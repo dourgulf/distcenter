@@ -15,18 +15,15 @@ var ipapaser = require('./ipa/ipaparser');
 var AppInfo = require('./ipa/appinfo');
 
 var config = require("../config");
-var baseFilePath = config.appStoragePath;
-var IPAInstallURLbase = config.IPAInstallURLbase;
-var installPlistName = config.installPlistName;
 
 var installPlistTemplate = require('./template').installPlistTemplate;
 
 stringformat.extendString('coolFormat');
 
 function createInstallFiles(appInfo) {
-    var ipaurl = IPAInstallURLbase + appInfo.storageID + "/" + appInfo.fileName;
+    var ipaurl = config.IPAInstallURLbase + appInfo.storageID + "/" + appInfo.fileName;
     var plistContent = installPlistTemplate.coolFormat({appurl: ipaurl, bundleid: appInfo.bundleid, version: appInfo.version, title: appInfo.title});
-    var plistPath = path.join(appInfo.basePath, installPlistName);
+    var plistPath = path.join(appInfo.basePath, config.installPlistName);
     fs.writeFileSync(plistPath, plistContent, 'utf8');
 }
 
@@ -38,10 +35,10 @@ router.post('/', multipartMiddleware, function (req, res) {
     appInfo.storageID = uuid.v1();
 
     // 保存基本路径,方便后续使用
-    var savePath = path.join(baseFilePath + appInfo.storageID);
+    var savePath = path.join(config.appStoragePath + appInfo.storageID);
     debug("base path:" + savePath);
     appInfo.basePath = savePath;
-    appInfo.fileName = "app.ipa";
+    appInfo.fileName = config.appName;
     mkdirp.sync(savePath);
 
     // IPA文件路径
@@ -59,7 +56,7 @@ router.post('/', multipartMiddleware, function (req, res) {
                     return ;
                 }
 
-                var iconPath = path.join(parseResult.basePath, "/icon.png");
+                var iconPath = path.join(parseResult.basePath, config.iconName);
                 debug(iconPath);
                 fs.readFile(iconPath, function (err, iconData) {
                     if (!err) {

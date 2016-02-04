@@ -15,9 +15,6 @@ var path = require('path');
 var dbservice = require('./dbservice');
 
 var config = require("../config");
-var baseFilePath = config.appStoragePath;
-var IPAInstallURLbase = config.IPAInstallURLbase;
-var installPlistName = config.installPlistName;
 
 var installHTMLTemplate = require('./template').installHTMLTemplate
 
@@ -39,12 +36,13 @@ router.get('/', function (req, res) {
             return ;
         }
 
-        appInfo.basePath = path.join(baseFilePath, appInfo.storageID);
-        var buildInfo = appInfo.version + "(" + appInfo.buildVersion + ")";
+        appInfo.basePath = path.join(config.appStoragePath, appInfo.storageID);
+        var buildInfo = appInfo.version + "(Build#" + appInfo.buildVersion + ")";
         var iconPath = path.join(appInfo.basePath, "/icon.png");
         var contentParams = {AppTitle: appInfo.title, BuildInfo: buildInfo}
-        var plistURL = IPAInstallURLbase + appInfo.storageID + "/" + installPlistName;
+        var plistURL = config.IPAInstallURLbase + appInfo.storageID + "/" + config.installPlistName;
         contentParams.itmsURL = itmsURLTemplate.coolFormat({plistURL: plistURL});
+        contentParams.UploadTimestamp = appInfo.uploadTimestamp;
         fs.readFile(iconPath, function (err, iconData) {
             if (!err) {
                 contentParams.iconURL = "data:image/png;base64," + iconData.toString("base64");

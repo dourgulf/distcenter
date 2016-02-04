@@ -17,3 +17,5 @@ module.exports.uncrashIconCmd = 'python /home/ubuntu/node/distcenter/exec/uncrus
 
 module.exports.appStoragePath = path.join(__dirname, 'uploads/ipa/');
 module.exports.installPlistName = "install.plist";
+module.exports.appName = "theApp";
+module.exports.iconName = "icon.png";
