@@ -16,4 +16,4 @@ module.exports.IPAInstallURLbase = "https://www.dawenhing.top/ipa/";
 module.exports.uncrashIconCmd = 'python /home/ubuntu/node/distcenter/exec/uncrushpng.py "{src}" "{dst}" ';
 
 module.exports.appStoragePath = path.join(__dirname, 'uploads/ipa/');
-
+module.exports.installPlistName = "install.plist";
