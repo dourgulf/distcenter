@@ -2,93 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="823d1897-ec9b-4e7e-981b-f0bedf5034ce" name="Default" comment="上传画面第一版美化完成">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/06048011-ca54-11e5-887c-976d0fc73c76/20160201154115_p2016all-adhoc_t20160201_154422_bcrashdemo_v1.0.ipa" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/06048011-ca54-11e5-887c-976d0fc73c76/icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/06048011-ca54-11e5-887c-976d0fc73c76/icon_iOS.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/06048011-ca54-11e5-887c-976d0fc73c76/install.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/06048011-ca54-11e5-887c-976d0fc73c76/install.plist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/0696cda1-ca57-11e5-b1e4-d1aed96dc72a/20160201154115_p2016all-adhoc_t20160201_154422_bcrashdemo_v1.0.ipa" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/0696cda1-ca57-11e5-b1e4-d1aed96dc72a/icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/0696cda1-ca57-11e5-b1e4-d1aed96dc72a/icon_iOS.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/0696cda1-ca57-11e5-b1e4-d1aed96dc72a/install.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/0696cda1-ca57-11e5-b1e4-d1aed96dc72a/install.plist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/1ae79251-ca4b-11e5-86e7-d78b74ad1f63/20160201154115_p2016all-adhoc_t20160201_154422_bcrashdemo_v1.0.ipa" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/1ae79251-ca4b-11e5-86e7-d78b74ad1f63/icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/1ae79251-ca4b-11e5-86e7-d78b74ad1f63/icon_iOS.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/1ae79251-ca4b-11e5-86e7-d78b74ad1f63/install.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/1ae79251-ca4b-11e5-86e7-d78b74ad1f63/install.plist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/39da0041-ca54-11e5-a54f-47179e9b94c9/20160201154115_p2016all-adhoc_t20160201_154422_bcrashdemo_v1.0.ipa" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/39da0041-ca54-11e5-a54f-47179e9b94c9/icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/39da0041-ca54-11e5-a54f-47179e9b94c9/icon_iOS.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/39da0041-ca54-11e5-a54f-47179e9b94c9/install.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/39da0041-ca54-11e5-a54f-47179e9b94c9/install.plist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/50eff1b0-ca43-11e5-bdf5-8d2376397d1d/20160201154115_p2016all-adhoc_t20160201_154422_bcrashdemo_v1.0.ipa" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/50eff1b0-ca43-11e5-bdf5-8d2376397d1d/icon_iOS.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/50eff1b0-ca43-11e5-bdf5-8d2376397d1d/install.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/50eff1b0-ca43-11e5-bdf5-8d2376397d1d/install.plist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/63011d41-ca50-11e5-8445-9980faa8000d/20160201154115_p2016all-adhoc_t20160201_154422_bcrashdemo_v1.0.ipa" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/63011d41-ca50-11e5-8445-9980faa8000d/icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/63011d41-ca50-11e5-8445-9980faa8000d/icon_iOS.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/63011d41-ca50-11e5-8445-9980faa8000d/install.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/63011d41-ca50-11e5-8445-9980faa8000d/install.plist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/6793d050-ca46-11e5-9742-d1dd15578fd1/20160201154115_p2016all-adhoc_t20160201_154422_bcrashdemo_v1.0.ipa" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/6793d050-ca46-11e5-9742-d1dd15578fd1/icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/6793d050-ca46-11e5-9742-d1dd15578fd1/icon_iOS.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/6793d050-ca46-11e5-9742-d1dd15578fd1/install.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/6793d050-ca46-11e5-9742-d1dd15578fd1/install.plist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/6f619e40-ca49-11e5-bc2c-dba33c133397/20160201154115_p2016all-adhoc_t20160201_154422_bcrashdemo_v1.0.ipa" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/6f619e40-ca49-11e5-bc2c-dba33c133397/icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/6f619e40-ca49-11e5-bc2c-dba33c133397/icon_iOS.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/6f619e40-ca49-11e5-bc2c-dba33c133397/install.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/6f619e40-ca49-11e5-bc2c-dba33c133397/install.plist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/780ab861-ca49-11e5-9be2-05cb1dde0508/20160201154115_p2016all-adhoc_t20160201_154422_bcrashdemo_v1.0.ipa" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/780ab861-ca49-11e5-9be2-05cb1dde0508/icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/780ab861-ca49-11e5-9be2-05cb1dde0508/icon_iOS.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/780ab861-ca49-11e5-9be2-05cb1dde0508/install.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/780ab861-ca49-11e5-9be2-05cb1dde0508/install.plist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/7ea68a70-ca56-11e5-90c3-0b3619b408a3/20160201154115_p2016all-adhoc_t20160201_154422_bcrashdemo_v1.0.ipa" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/7ea68a70-ca56-11e5-90c3-0b3619b408a3/icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/7ea68a70-ca56-11e5-90c3-0b3619b408a3/icon_iOS.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/7ea68a70-ca56-11e5-90c3-0b3619b408a3/install.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/7ea68a70-ca56-11e5-90c3-0b3619b408a3/install.plist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/7f0cfc20-ca50-11e5-8883-79c01a09cc47/20160201154115_p2016all-adhoc_t20160201_154422_bcrashdemo_v1.0.ipa" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/7f0cfc20-ca50-11e5-8883-79c01a09cc47/icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/7f0cfc20-ca50-11e5-8883-79c01a09cc47/icon_iOS.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/7f0cfc20-ca50-11e5-8883-79c01a09cc47/install.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/7f0cfc20-ca50-11e5-8883-79c01a09cc47/install.plist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/a5eca180-ca49-11e5-b0ab-29adaca00902/20160201154115_p2016all-adhoc_t20160201_154422_bcrashdemo_v1.0.ipa" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/a5eca180-ca49-11e5-b0ab-29adaca00902/icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/a5eca180-ca49-11e5-b0ab-29adaca00902/icon_iOS.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/a5eca180-ca49-11e5-b0ab-29adaca00902/install.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/a5eca180-ca49-11e5-b0ab-29adaca00902/install.plist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/ae5cfa90-ca58-11e5-afab-81a32b17a7db/20160201154115_p2016all-adhoc_t20160201_154422_bcrashdemo_v1.0.ipa" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/ae5cfa90-ca58-11e5-afab-81a32b17a7db/icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/ae5cfa90-ca58-11e5-afab-81a32b17a7db/icon_iOS.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/ae5cfa90-ca58-11e5-afab-81a32b17a7db/install.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/ae5cfa90-ca58-11e5-afab-81a32b17a7db/install.plist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/b6b50821-ca50-11e5-887c-976d0fc73c76/20160201154115_p2016all-adhoc_t20160201_154422_bcrashdemo_v1.0.ipa" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/b6b50821-ca50-11e5-887c-976d0fc73c76/icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/b6b50821-ca50-11e5-887c-976d0fc73c76/icon_iOS.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/b6b50821-ca50-11e5-887c-976d0fc73c76/install.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/b6b50821-ca50-11e5-887c-976d0fc73c76/install.plist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/b7317c61-ca56-11e5-b5b1-973d540baa31/20160201154115_p2016all-adhoc_t20160201_154422_bcrashdemo_v1.0.ipa" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/b7317c61-ca56-11e5-b5b1-973d540baa31/icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/b7317c61-ca56-11e5-b5b1-973d540baa31/icon_iOS.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/b7317c61-ca56-11e5-b5b1-973d540baa31/install.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/b7317c61-ca56-11e5-b5b1-973d540baa31/install.plist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/d8496691-ca58-11e5-9d3b-79ee6973c557/20160201154115_p2016all-adhoc_t20160201_154422_bcrashdemo_v1.0.ipa" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/d8496691-ca58-11e5-9d3b-79ee6973c557/icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/d8496691-ca58-11e5-9d3b-79ee6973c557/icon_iOS.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/d8496691-ca58-11e5-9d3b-79ee6973c557/install.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/d8496691-ca58-11e5-9d3b-79ee6973c557/install.plist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/ffa33411-ca48-11e5-bc2c-dba33c133397/20160201154115_p2016all-adhoc_t20160201_154422_bcrashdemo_v1.0.ipa" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/ffa33411-ca48-11e5-bc2c-dba33c133397/icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/ffa33411-ca48-11e5-bc2c-dba33c133397/icon_iOS.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/ffa33411-ca48-11e5-bc2c-dba33c133397/install.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/uploads/ipa/ffa33411-ca48-11e5-bc2c-dba33c133397/install.plist" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/download.js" afterPath="$PROJECT_DIR$/routes/download.js" />
     </list>
     <ignored path="distcenter.iws" />
@@ -114,27 +28,17 @@
         <entry file="file://$PROJECT_DIR$/routes/upload.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="33" column="50" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="50" />
+              <caret line="70" column="21" selection-start-line="70" selection-start-column="21" selection-end-line="70" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="template.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/template.js">
+      <file leaf-file-name="uuid.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/node-uuid/uuid.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="73" selection-start-line="9" selection-start-column="73" selection-end-line="9" selection-end-column="73" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="19" column="29" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="29" />
+              <caret line="135" column="11" selection-start-line="135" selection-start-column="11" selection-end-line="135" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -144,57 +48,7 @@
         <entry file="file://$PROJECT_DIR$/routes/ipa/appinfo.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="download.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/download.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="49" column="13" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="response.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/express/lib/response.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="137" column="13" selection-start-line="137" selection-start-column="13" selection-end-line="137" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0031948881">
-              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="install-template.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/install-template.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-24.444445">
-              <caret line="73" column="57" selection-start-line="73" selection-start-column="57" selection-end-line="73" selection-end-column="57" />
+              <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -203,8 +57,68 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.444445">
-              <caret line="95" column="56" selection-start-line="95" selection-start-column="48" selection-end-line="95" selection-end-column="56" />
+            <state vertical-scroll-proportion="-7.6666665">
+              <caret line="95" column="73" selection-start-line="95" selection-start-column="73" selection-end-line="95" selection-end-column="73" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="error.jade" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/error.jade">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.jade" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/index.jade">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="install-template.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/install-template.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.75328946">
+              <caret line="73" column="57" selection-start-line="73" selection-start-column="57" selection-end-line="73" selection-end-column="57" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="layout.jade" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/layout.jade">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="plist-template.plist" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/plist-template.plist">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dbservice.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/dbservice.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="42" column="9" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -256,11 +170,11 @@
         <option value="$PROJECT_DIR$/routes/dbservice.js" />
         <option value="$PROJECT_DIR$/views/install-template.html" />
         <option value="$PROJECT_DIR$/config.js" />
-        <option value="$PROJECT_DIR$/routes/upload.js" />
-        <option value="$PROJECT_DIR$/routes/ipa/appinfo.js" />
         <option value="$PROJECT_DIR$/public/index.html" />
-        <option value="$PROJECT_DIR$/routes/download.js" />
         <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/routes/download.js" />
+        <option value="$PROJECT_DIR$/routes/ipa/appinfo.js" />
+        <option value="$PROJECT_DIR$/routes/upload.js" />
       </list>
     </option>
   </component>
@@ -566,11 +480,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="60" y="23" width="1860" height="1057" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15986949" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15986949" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988626" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32885212" sideWeight="0.5043337" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32885212" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.327818" sideWeight="0.4956663" order="2" side_tool="false" content_ui="tabs" />
@@ -585,7 +500,6 @@
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="153" y="123" width="1667" height="857" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32885212" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -603,13 +517,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node_modules/rimraf/rimraf.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="1" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/javascript/nodejs/library/node-globals-stub.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.019169329">
@@ -837,20 +744,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/error.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/layout.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bin/www">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.3703704">
@@ -866,13 +759,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/plist-template.plist">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/mysql/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -880,41 +766,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/index.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/dbservice.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="67" column="12" selection-start-line="67" selection-start-column="12" selection-end-line="67" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/express/lib/response.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="137" column="13" selection-start-line="137" selection-start-column="13" selection-end-line="137" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="29" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/ipa/appinfo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -927,10 +782,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/install-template.html">
+    <entry file="file://$PROJECT_DIR$/config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-24.444445">
-          <caret line="73" column="57" selection-start-line="73" selection-start-column="57" selection-end-line="73" selection-end-column="57" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="27" />
           <folding />
         </state>
       </provider>
@@ -943,18 +798,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.444445">
-          <caret line="95" column="56" selection-start-line="95" selection-start-column="48" selection-end-line="95" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/upload.js">
+    <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="50" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="50" />
+          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -962,15 +809,87 @@
     <entry file="file://$PROJECT_DIR$/routes/download.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="49" column="13" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
+          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
+    <entry file="file://$PROJECT_DIR$/routes/dbservice.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0031948881">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="42" column="9" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/node-uuid/uuid.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="135" column="11" selection-start-line="135" selection-start-column="11" selection-end-line="135" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.6666665">
+          <caret line="95" column="73" selection-start-line="95" selection-start-column="73" selection-end-line="95" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/ipa/appinfo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/upload.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="70" column="21" selection-start-line="70" selection-start-column="21" selection-end-line="70" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/error.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/layout.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/plist-template.plist">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/install-template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.75328946">
+          <caret line="73" column="57" selection-start-line="73" selection-start-column="57" selection-end-line="73" selection-end-column="57" />
           <folding />
         </state>
       </provider>
