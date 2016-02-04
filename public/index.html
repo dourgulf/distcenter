@@ -93,7 +93,7 @@
             var $result_zone = $('#upload-result-zone');
             $result_zone.find("#image-icon").prop('src', result.iconURL);
 
-            var installURL = window.location + "download/query?appID=" + result.appID + "&userID=-1";
+            var installURL = window.location + "queryapp?appID=" + result.appID + "&userID=-1";
             add_log(installURL);
             var qrmakerURL = "https://dawenhing.top/myapi/qrcode?text=" + window.encodeURIComponent(installURL);
             $result_zone.find("#image-qrcode").prop('src', qrmakerURL);
@@ -143,11 +143,11 @@
                 update_file_status(id, 'error', message);
             },
             onFileTypeError: function (file) {
-                add_log('文件 \'' + file.name + '\' 类型错误:必须是IPA文件哦');
+                add_log('File \'' + file.name + '\' type err: Must be(.ipa)');
 
             },
             onFileSizeError: function (file) {
-                add_log('文件 \'' + file.name + '\' 超过大小限制了');
+                add_log('File \'' + file.name + '\' too large');
             },
             /*onFileExtError: function(file){
               $.danidemo.addLog('#demo-debug', 'error', 'File \'' + file.name + '\' has a Not Allowed Extension');

@@ -47,7 +47,7 @@ function makeResponse(ipaInfo) {
 
 }
 
-router.get('/query', function (req, res) {
+router.get('/', function (req, res) {
     var appID = req.query.appID;
     var userID = req.query.userID;
     debug("appID:" + appID);
