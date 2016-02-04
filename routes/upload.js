@@ -31,9 +31,9 @@ stringformat.extendString('coolFormat');
 
 function createInstallFiles(appInfo) {
     // IPA 文件的下载链接,它是一个完整的HTTPS下载地址
-    var ipaurl = IPAInstallURLbase + appInfo.appID + "/" + appInfo.fileName;
+    var ipaurl = IPAInstallURLbase + appInfo.storageID "/" + appInfo.fileName;
     // 包含IPA下载信息的Plist文件的下载链接
-    var plistURL = IPAInstallURLbase + appInfo.appID + "/" + installPlistName;
+    var plistURL = IPAInstallURLbase + appInfo.storageID + "/" + installPlistName;
 
     //  AppStore跳转协议链接
     var itmsURL = itmsURLTemplate.coolFormat({plisturl: plistURL});
@@ -60,7 +60,7 @@ router.post('/', multipartMiddleware, function (req, res) {
     var savePath = path.join(baseFilePath + appInfo.storageID);
     debug("base path:" + savePath);
     appInfo.basePath = savePath;
-    appInfo.fileName = req.files.file.originalFilename;
+    appInfo.fileName = "app.ipa";  //req.files.file.originalFilename;
     mkdirp.sync(savePath);
 
     // IPA文件路径

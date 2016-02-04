@@ -65,11 +65,16 @@ router.get('/', function (req, res) {
         var buildInfo = appInfo.version + "(" + appInfo.buildVersion + ")";
         var iconPath = path.join(appInfo.basePath, "/icon.png");
         var contentParams = {AppTitle: appInfo.title, BuildInfo: buildInfo}
+        var ipaurl = IPAInstallURLbase + appInfo.storageID + "/app.ipa";
+        var plistURL = IPAInstallURLbase + ipaInfo.appID + "/" + installPlistName;
+
+    //  AppStore跳转协议链接
+    var itmsURL = itmsURLTemplate.coolFormat({plisturl: plistURL});
         fs.readFile(iconPath, function (err, iconData) {
             if (!err) {
                 contentParams.iconURL = "data:image/png;base64," + iconData.toString("base64");
             }
-            var htmlContent = installHTMLTemplate.coolFormat({AppTitle: appInfo.title, BuildInfo: buildInfo, iconURL: iconDataString});
+            var htmlContent = installHTMLTemplate.coolFormat(contentParams);
             res.send(htmlContent);
         });
 
