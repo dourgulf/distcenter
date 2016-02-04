@@ -29,7 +29,7 @@ h1 a {
 
 .content_wrapper {
     margin: 0 auto;
-    width: 410px;
+    width: 360px;
 }
 
 #drag-and-drop-zone {
@@ -49,7 +49,7 @@ h1 a {
     color: white;
     font-size: 16px;
     font-weight: bold;
-    border-width: 0px;
+    border: 1px dotted black;
 }
 
 .uploader span {
@@ -62,7 +62,7 @@ h1 a {
 
 .uploader input {
     border: solid transparent;
-    border-width: 0 0 310px 200px;
+    border-width: 0 0 480px 120px;
     opacity: .0;
     filter: alpha(opacity=0);
     direction: ltr;
@@ -82,7 +82,7 @@ h1 a {
     overflow: hidden;
     text-align: left;
     font-size: 16px;
-    height: 310px;
+    height: 480px;
     background-color: #FFBF00;
     color: white;   
     box-shadow: 10px 10px 50px darkgray;
