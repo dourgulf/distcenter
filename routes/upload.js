@@ -59,7 +59,10 @@ router.post('/', multipartMiddleware, function (req, res) {
                 var iconPath = path.join(parseResult.basePath, config.iconName);
                 debug(iconPath);
                 fs.readFile(iconPath, function (err, iconData) {
-                    if (!err) {
+                    if (err) {
+                        res.send(JSON.stringify({status:0, appID: parseResult.appID}));
+                    }
+                    else {
                         var iconDataString = "data:image/png;base64," + iconData.toString("base64");
                         res.send(JSON.stringify({status:0, appID: parseResult.appID, iconURL: iconDataString}));
                     }

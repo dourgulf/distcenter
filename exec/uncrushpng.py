@@ -131,6 +131,10 @@ if __name__ == "__main__":
         sys.exit(-1)
 
     crushedName = sys.argv[1]
+    if not os.path.exists(crushedName):
+        print "PNG file not(%s) exists" % crushedName
+        sys.exit(-1)
+
     uncrushedName = sys.argv[2]
     if crushedName == uncrushedName:
         print "Can't overwite the original file"
