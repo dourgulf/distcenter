@@ -75,8 +75,13 @@
         function begin_upload(id, file) {
             $('#drag-and-drop-zone').hide();
             $('#upload-progress-zone').show();
-            var statusText = file.name + "(" + file.size + ")";
+            var statusText = file.name + "(大小:" + file.size + ")";
             $('#upload-progress-zone').find('#file-status').html(statusText);
+        }
+
+        function begin_anaylse(id) {
+            $('#upload-progress-zone').find('#file-status').html("正在分析IPA包...");
+//            $('#upload-progress-zone').find('.progress-bar').hide()
         }
 
         function update_file_status(id, status, message) {
@@ -94,6 +99,7 @@
 
             var installURL = window.location + "queryapp?appID=" + result.appID + "&userID=-1";
             add_log(installURL);
+            window.location = installURL
             var qrmakerURL = "https://dawenhing.top/myapi/qrcode?text=" + window.encodeURIComponent(installURL);
             $result_zone.find("#image-qrcode").prop('src', qrmakerURL);
 
@@ -125,6 +131,10 @@
                 var percentStr = percent + '%';
 
                 update_file_progress(id, percentStr);
+                if (percent>=100) {
+                    add_log("Analysing content")
+                    begin_anaylse(id)
+                }
             },
             onUploadSuccess: function (id, data) {
                 add_log('Upload of file #' + id + ' completed');

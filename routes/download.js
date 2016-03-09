@@ -41,8 +41,11 @@ router.get('/', function (req, res) {
         var iconPath = path.join(appInfo.basePath, "/icon.png");
         var contentParams = {AppTitle: appInfo.title, BuildInfo: buildInfo}
         var plistURL = config.IPAInstallURLbase + appInfo.storageID + "/" + config.installPlistName;
+        debug("plistURL:" + plistURL)
+        console.log(plistURL)
         contentParams.itmsURL = itmsURLTemplate.coolFormat({plistURL: plistURL});
         contentParams.UploadTimestamp = appInfo.uploadTimestamp;
+        contentParams.PlistURL = plistURL
         fs.readFile(iconPath, function (err, iconData) {
             if (!err) {
                 contentParams.iconURL = "data:image/png;base64," + iconData.toString("base64");

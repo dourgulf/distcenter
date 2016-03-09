@@ -1,0 +1,21 @@
+
+> distcenter@0.0.0 start /Users/jinchudarwin/WebstormProjects/distcenter
+> DEBUG=*:*;PORT=3002 supervisor ./bin/www
+
+
+Running node-supervisor with
+  program './bin/www'
+  --watch '.'
+  --extensions 'node,js,/bin/www'
+  --exec 'node'
+
+Starting child process with 'node ./bin/www'
+Watching directory '/Users/jinchudarwin/WebstormProjects/distcenter' for changes.
+Press rs for restarting the process.
+events.js:141
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: read EIO
+    at exports._errnoException (util.js:855:11)
+    at TTY.onread (net.js:544:26)
